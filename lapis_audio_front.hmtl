@@ -35,6 +35,7 @@
     {{#Hint}}
     <div id="hint">{{Hint}}</div>
     {{/Hint}}
+    <div class="audio-buttons">{{SentenceAudio}} {{ExpressionAudio}}</div>
 </main>
 
 <script>

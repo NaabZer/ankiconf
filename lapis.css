@@ -17,8 +17,10 @@
     --light-mode-kifuku: #7e53c4;
 
     /* Bold color */
-    --light-mode-bold: #999999;
-    --dark-mode-bold: #7d8590;
+    /*--light-mode-bold: #999999;*/
+    --light-mode-bold: #4660f1;
+    /*--dark-mode-bold: #7d8590;*/
+    --dark-mode-bold: #a64d79;
 
     /* PC Font sizes */
     --pc-main-font-size: 16px;
@@ -873,21 +875,58 @@ ol li[data-details="新和英"] details.glossary-text__details .glossary-text__s
     padding-inline-start: 0;
 }
 
-/* Own stuff */
+/* --------- Own stuff ------------  */
+
+/* custom Audio Cards */
 .front-audio.front-sentence b {
     font-size: 0
 }
 
-.front-audio.front-vocab b {
+.front-audio.front-vocab {
     font-size: 0
-}
-
-.front-audio.front-vocab b::before {
-    content: "[...]";
-    font-size: var(--vocab-font-size);
 }
 
 .front-audio.front-sentence b::before {
     content: "[...]";
     font-size: var(--sentence-font-size);
+}
+
+.front-audio.front-vocab::before {
+    content: "[...]";
+    font-size: var(--vocab-font-size);
+}
+
+/* Custom glossary styles */
+ol li[data-sc-content="example-sentence-a"]{
+	display: none;
+}
+ol li[data-sc-content="example-sentence-b"]{
+	display: none;
+}
+
+ol li[data-details="Jitendex [2023-12-12]"] .dict-group__tag-list {
+  display: none;
+}
+
+ol li[data-sc-content="forms"]{
+	display: none;
+}
+
+ol div[data-sc-content="forms"]{
+	display: none;
+}
+
+ol li[data-sc-content="xref"]{
+	display: none;
+}
+ol li[data-sc-content="xref-glossary"]{
+	display: none;
+}
+
+ul[data-sc-content="glossary"] li { 
+	display: inline; 
+}
+
+ul[data-sc-content="glossary"] li:not(:first-child):before { 
+	content: " | "; 
 }
