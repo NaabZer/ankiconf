@@ -903,15 +903,20 @@ ol li[data-sc-content="example-sentence-a"]{
 ol li[data-sc-content="example-sentence-b"]{
 	display: none;
 }
+ol div[data-sc-content="example-sentence"]{
+	display: none;
+}
 
 ol li[data-details="Jitendex [2023-12-12]"] .dict-group__tag-list {
+  display: none;
+}
+ol li[data-dictionary="Jitendex.org [2025-01-27]"] i{
   display: none;
 }
 
 ol li[data-sc-content="forms"]{
 	display: none;
 }
-
 ol div[data-sc-content="forms"]{
 	display: none;
 }
@@ -929,4 +934,8 @@ ul[data-sc-content="glossary"] li {
 
 ul[data-sc-content="glossary"] li:not(:first-child):before { 
 	content: " | "; 
+}
+
+div[data-sc-content="attribution"]{
+    display: none;
 }
