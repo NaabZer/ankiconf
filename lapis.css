@@ -943,3 +943,54 @@ ul[data-sc-content="glossary"] li:not(:first-child):before {
 div[data-sc-content="attribution"]{
     display: none;
 }
+
+[morph-status=unknown] { color: blue; }
+[morph-status=learning] { color: #8bb33d; } /* light-green */
+[morph-status=known] { color: green; }
+[morph-status=undefined] { color: grey; }
+
+.nightMode [morph-status=unknown] { color: red; } 
+.nightMode [morph-status=learning] { color: #ffff99; } /* yellow */
+.nightMode [morph-status=known] { color: #8bb33d; } /* light-green */
+.nightMode [morph-status=undefined] { color: grey; }
+
+/* Pitch coloring, ignoring target word for morphs*/
+.heiban [morph-status=unknown],
+.heiban [morph-status=learning],
+.heiban [morph-status=known],
+.heiban [morph-status=undefined]
+{
+    color: var(--heiban);
+}
+
+.atamadaka [morph-status=unknown],
+.atamadaka [morph-status=learning],
+.atamadaka [morph-status=known],
+.atamadaka [morph-status=undefined]
+{
+    color: var(--atamadaka);
+}
+
+.nakadaka [morph-status=unknown],
+.nakadaka [morph-status=learning],
+.nakadaka [morph-status=known],
+.nakadaka [morph-status=undefined]
+{
+    color: var(--nakadaka);
+}
+
+.odaka [morph-status=unknown],
+.odaka [morph-status=learning],
+.odaka [morph-status=known],
+.odaka [morph-status=undefined]
+{
+    color: var(--odaka);
+}
+
+.kifuku [morph-status=unknown],
+.kifuku [morph-status=learning],
+.kifuku [morph-status=known],
+.kifuku [morph-status=undefined]
+{
+    color: var(--kifuku);
+}
