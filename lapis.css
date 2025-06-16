@@ -955,42 +955,42 @@ div[data-sc-content="attribution"]{
 .nightMode [morph-status=undefined] { color: grey; }
 
 /* Pitch coloring, ignoring target word for morphs*/
-.heiban [morph-status=unknown],
-.heiban [morph-status=learning],
-.heiban [morph-status=known],
-.heiban [morph-status=undefined]
+.heiban [morph-status=unknown]:not(:hover),
+.heiban [morph-status=learning]:not(:hover),
+.heiban [morph-status=known]:not(:hover),
+.heiban [morph-status=undefined]:not(:hover)
 {
     color: var(--heiban);
 }
 
-.atamadaka [morph-status=unknown],
-.atamadaka [morph-status=learning],
-.atamadaka [morph-status=known],
-.atamadaka [morph-status=undefined]
+.atamadaka [morph-status=unknown]:not(:hover),
+.atamadaka [morph-status=learning]:not(:hover),
+.atamadaka [morph-status=known]:not(:hover),
+.atamadaka [morph-status=undefined]:not(:hover)
 {
     color: var(--atamadaka);
 }
 
-.nakadaka [morph-status=unknown],
-.nakadaka [morph-status=learning],
-.nakadaka [morph-status=known],
-.nakadaka [morph-status=undefined]
+.nakadaka [morph-status=unknown]:not(:hover),
+.nakadaka [morph-status=learning]:not(:hover),
+.nakadaka [morph-status=known]:not(:hover),
+.nakadaka [morph-status=undefined]:not(:hover)
 {
     color: var(--nakadaka);
 }
 
-.odaka [morph-status=unknown],
-.odaka [morph-status=learning],
-.odaka [morph-status=known],
-.odaka [morph-status=undefined]
+.odaka [morph-status=unknown]:not(:hover),
+.odaka [morph-status=learning]:not(:hover),
+.odaka [morph-status=known]:not(:hover),
+.odaka [morph-status=undefined]:not(:hover)
 {
     color: var(--odaka);
 }
 
-.kifuku [morph-status=unknown],
-.kifuku [morph-status=learning],
-.kifuku [morph-status=known],
-.kifuku [morph-status=undefined]
+.kifuku [morph-status=unknown]:not(:hover),
+.kifuku [morph-status=learning]:not(:hover),
+.kifuku [morph-status=known]:not(:hover),
+.kifuku [morph-status=undefined]:not(:hover)
 {
     color: var(--kifuku);
 }
