@@ -29,6 +29,7 @@
     --pc-back-vocab-font-size: 60px;
     --pc-sentence-font-size: 52px;
     --pc-back-sentence-font-size: 35px;
+    --pc-morph-sentence-font-size: 22px;
     --pc-hint-font-size: 38px;
     --pc-info-font-size: 23px;
 
@@ -39,6 +40,7 @@
     --mobile-back-vocab-font-size: 32px;
     --mobile-sentence-font-size: 38px;
     --mobile-back-sentence-font-size: 24px;
+    --mobile-morph-sentence-font-size: 14px;
     --mobile-hint-font-size: 24px;
     --mobile-info-font-size: 16px;
 
@@ -119,6 +121,7 @@ html.linux:not(.android) {
     --back-vocab-font-size: var(--pc-back-vocab-font-size);
     --sentence-font-size: var(--pc-sentence-font-size);
     --back-sentence-font-size: var(--pc-back-sentence-font-size);
+    --morph-sentence-font-size: var(--pc-morph-sentence-font-size);
     --hint-font-size: var(--pc-hint-font-size);
     --info-font-size: var(--pc-info-font-size);
 }
@@ -130,6 +133,7 @@ html.mobile {
     --back-vocab-font-size: var(--mobile-back-vocab-font-size);
     --sentence-font-size: var(--mobile-sentence-font-size);
     --back-sentence-font-size: var(--mobile-back-sentence-font-size);
+    --morph-sentence-font-size: var(--mobile-morph-sentence-font-size);
     --hint-font-size: var(--mobile-hint-font-size);
     --info-font-size: var(--mobile-info-font-size);
 }
@@ -473,6 +477,18 @@ header {
     display: none;
 }
 
+.morph-sentence {
+    line-height: 1.5;
+    font-size: var(--morph-sentence-font-size);
+    display: inline-block;
+    width: calc(100% - 20px);
+    max-width: var(--max-width);
+}
+
+.morph-sentence-mobile {
+    display: none;
+}
+
 .mobile .sentence {
     display: none;
 }
@@ -480,6 +496,17 @@ header {
 .mobile .sentence-mobile {
     line-height: 1.5;
     font-size: var(--back-sentence-font-size);
+    display: inline-block;
+    width: calc(100% - 20px);
+    max-width: var(--max-width);
+}
+.mobile .morph-sentence {
+    display: none;
+}
+
+.mobile .morph-sentence-mobile {
+    line-height: 1.5;
+    font-size: var(--morph-sentence-font-size);
     display: inline-block;
     width: calc(100% - 20px);
     max-width: var(--max-width);
@@ -954,7 +981,7 @@ div[data-sc-content="attribution"]{
 .nightMode [morph-status=known] { color: #8bb33d; } /* light-green */
 .nightMode [morph-status=undefined] { color: grey; }
 
-/* Pitch coloring, ignoring target word for morphs*/
+/* Pitch coloring, ignoring target word for morphs
 .heiban [morph-status=unknown]:not(:hover),
 .heiban [morph-status=learning]:not(:hover),
 .heiban [morph-status=known]:not(:hover),
@@ -987,10 +1014,11 @@ div[data-sc-content="attribution"]{
     color: var(--odaka);
 }
 
-.kifuku [morph-status=unknown]:not(:hover),
-.kifuku [morph-status=learning]:not(:hover),
-.kifuku [morph-status=known]:not(:hover),
-.kifuku [morph-status=undefined]:not(:hover)
+.kifuku [morph-status=unknown],
+.kifuku [morph-status=learning],
+.kifuku [morph-status=known],
+.kifuku [morph-status=undefined]
 {
     color: var(--kifuku);
 }
+*/

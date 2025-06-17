@@ -59,10 +59,13 @@
 
         <br>
         <div class="sentence">
-            <!--{{#SentenceFurigana}} {{furigana:SentenceFurigana}} {{/SentenceFurigana}}
-              {{^SentenceFurigana}} {{furigana:Sentence}} {{/SentenceFurigana}} -->
-              {{#am-highlighted}} {{furigana:am-highlighted}} {{/am-highlighted}}
-              {{^am-highlighted}} {{furigana:Sentence}} {{/am-highlighted}}
+          {{#SentenceFurigana}} {{furigana:SentenceFurigana}} {{/SentenceFurigana}}
+          {{^SentenceFurigana}} {{furigana:Sentence}} {{/SentenceFurigana}}
+              <!--{{#am-highlighted}} {{furigana:am-highlighted}} {{/am-highlighted}}
+                {{^am-highlighted}} {{furigana:Sentence}} {{/am-highlighted}}-->
+        </div>
+        <div class="morph-sentence">
+          {{kanji:am-highlighted}}
         </div>
 
         <!-- The entire definition blockquote -->
@@ -86,10 +89,13 @@
 
         <!-- This is for the sentence that you see on mobile (positioned under definition), on Desktop, the sentence goes above the definition box, and this is hidden -->
         <div class="sentence-mobile">
-            <!--{{#SentenceFurigana}} {{furigana:SentenceFurigana}} {{/SentenceFurigana}}
-              {{^SentenceFurigana}} {{furigana:Sentence}} {{/SentenceFurigana}}-->
-            {{#am-highlighted}} {{furigana:am-highlighted}} {{/am-highlighted}}
-            {{^am-highlighted}} {{furigana:Sentence}} {{/am-highlighted}}
+            {{#SentenceFurigana}} {{furigana:SentenceFurigana}} {{/SentenceFurigana}}
+            {{^SentenceFurigana}} {{furigana:Sentence}} {{/SentenceFurigana}}
+            <!--{{#am-highlighted}} {{furigana:am-highlighted}} {{/am-highlighted}}
+              {{^am-highlighted}} {{furigana:Sentence}} {{/am-highlighted}}-->
+        </div>
+        <div class="morph-sentence-mobile">
+            {{kanji:am-highlighted}}
         </div>
 
         <!------- Image modal --------->
