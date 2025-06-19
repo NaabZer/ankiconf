@@ -369,6 +369,10 @@
         const isJPMNConverted = document.querySelector(".definition li[data-details]");
         if (isJPMNConverted) return false;
         // single dict formatting
+        const isJustText = document.querySelectorAll("#glossaries > div").length === 0 && document.querySelectorAll("#glossaries")[0].innerText.length > 0;
+        if(isJustText) {
+          return false;
+        }
         const isSingleDict = document.querySelectorAll("#glossaries > div > ol").length === 0;
         if (isSingleDict) {
             const primaryDictName = document.querySelector("#primary > div > i");
